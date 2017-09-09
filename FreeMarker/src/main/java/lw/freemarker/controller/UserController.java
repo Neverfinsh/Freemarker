@@ -68,6 +68,7 @@ public class UserController {
 	   list.add("b");
 	   list.add("c");
 	   
+	   
 //	   使用map集合来存储对象数据
 	   Map<String,String> map=new ConcurrentHashMap<String, String>();
 	   map.put("LastName", "Liu");
@@ -77,5 +78,25 @@ public class UserController {
 	   modle.addObject("mymap",map);
 	   return modle;
    }
+
+
+@RequestMapping("/str")
+public ModelAndView testStr(){
+	  //freemarker的映射的关系。
+	  ModelAndView view=new ModelAndView("str");
+	  
+	  return view;
+}
+
+
+
+@RequestMapping("/sort")
+public ModelAndView testSort(){
+	  ModelAndView view=new ModelAndView("sort");
+	  view.addObject("sort_init", new SortMethod());
+	  
+	  return view;
+}
+
 
 }

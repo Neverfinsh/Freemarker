@@ -13,11 +13,6 @@
 
 	<web>
 		<link target="/">
-			<dir name="I:/GitProject/freemarker/FreeMarker/target/m2e-jee/web-resources">
-				<exclude name="/"/>
-			</dir>
-		</link>
-		<link target="/">
 			<dir name="I:/GitProject/freemarker/FreeMarker/src/main/webapp">
 			</dir>
 		</link>
